@@ -1,0 +1,23 @@
+# RSVP SCHEMA
+
+type Query {
+  guests: [Guest!]!
+  guest(id: ID!): Guest
+}
+
+type Mutation {
+    addGuest(fullName: String!, street: String!, streetTwo: String, city: String!, state: String!, zip: String!, rsvp: Boolean!): Guest
+    updateGuest(id: ID!, fullName: String, street: String, streetTwo: String, city: String, state: String, zip: String, rsvp: Boolean): Guest
+    deleteGuest(id: ID!): Guest
+}
+
+type Guest {
+    id: ID!
+    fullName: String!
+    street: String!
+    streetTwo: String
+    city: String!
+    state: String!
+    zip: String!
+    rsvp: Boolean!
+}
