@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/benjamin4202/rsvp#readme",
   "dependencies": {
-    "graphql-yoga": "^1.18.3"
+    "graphql-yoga": "^1.18.3",
+    "prisma-client-lib": "^1.34.10"
   }
 }
